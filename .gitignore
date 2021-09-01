@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/AuthJWT.Model/obj
+/AuthJWT.Service/obj
+/AuthJWT.Tests/bin
+/AuthJWT.Tests/obj
+/AuthJWT.WebAPI/obj
+/AuthJWT.WebAPI/bin
+/Leo.Auth.Domain/obj/Debug/net5.0
+/Leo.Auth.Domain/obj/Release/net5.0
+/Leo.Auth.Service/obj/Debug/net5.0
+/Leo.Auth.Service/obj/Release/net5.0
+/Leo.Auth.Tests/obj/Debug/net5.0
+/Leo.Auth.Tests/obj/Release/net5.0
+/Leo.Auth.Api/obj/Debug/net5.0
+/Leo.Auth.Api/obj/Release/net5.0
