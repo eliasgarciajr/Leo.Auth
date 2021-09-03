@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -20,7 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthJWT.WebAPI\AuthJWT.WebAPI.csproj" />
+    <ProjectReference Include="..\..\Leo.Auth\Leo.Auth.Models\Leo.Auth.Models.csproj" />
+    <ProjectReference Include="..\..\Leo.Auth\Leo.Auth.Service\Leo.Auth.Service.csproj" />
+    <ProjectReference Include="..\Data\Leo.Auth.Data.csproj" />
+    <ProjectReference Include="..\Leo.Auth.Api\Leo.Auth.Api.csproj" />
   </ItemGroup>
 
 </Project>

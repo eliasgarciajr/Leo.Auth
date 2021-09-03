@@ -1,9 +1,9 @@
-using AuthJWT.WebAPI.Models;
-using AuthJWT.WebAPI.Repositories;
-using AuthJWT.WebAPI.Services;
+using Leo.Auth.Models;
+using Leo.Auth.Repositories;
+using Leo.Auth.Services;
 using Xunit;
 
-namespace AuthJWT.Tests
+namespace Leo.Auth.Tests
 {
     public class UnitTest
     {
@@ -11,7 +11,7 @@ namespace AuthJWT.Tests
         public void AuthenticateSuccess()
         {
             //arrange
-            var login = new User { Username = "leo", Password = "Madeiras@14072021" };
+            var login = new User { Username = "elias", Password = "elias@123" };
             //act
             var result = TokenService.GenerateToken(login);
             //assert
@@ -23,7 +23,7 @@ namespace AuthJWT.Tests
         public void AuthenticateError()
         {
             //arrange
-            var login = new User { Username = "leo", Password = "123456465879" };
+            var login = new User { Username = "elias", Password = "123456465879" };
             //act
             var result = UserRepository.Get(login.Username, login.Password);
             //assert
@@ -34,7 +34,7 @@ namespace AuthJWT.Tests
         public void ValidatePasswordSuccess()
         {
             //arrange
-            var model = new UserPassword { Password = "Madeiras@14072021" };
+            var model = new UserPassword { Password = "elias@123" };
             //act
             var result = PasswordService.ValidatePassword(model.Password);
             //assert
@@ -45,7 +45,7 @@ namespace AuthJWT.Tests
         public void ValidatePasswordError()
         {
             //arrange
-            var model = new UserPassword { Password = "14072021" };
+            var model = new UserPassword { Password = "21313213" };
             //act
             var result = PasswordService.ValidatePassword(model.Password);
             //assert

@@ -14,4 +14,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Leo.Auth\Leo.Auth.Service\Leo.Auth.Service.csproj" />
+    <ProjectReference Include="..\Data\Leo.Auth.Data.csproj" />
+    <ProjectReference Include="..\..\Leo.Auth\Leo.Auth.Models\Leo.Auth.Models.csproj" />
+  </ItemGroup>  
+
 </Project>

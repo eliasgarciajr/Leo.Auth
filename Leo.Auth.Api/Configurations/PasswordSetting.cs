@@ -1,4 +1,4 @@
-﻿namespace AuthJWT.WebAPI.Configurations
+﻿namespace Leo.Auth.Api.Configurations
 {
     public class PasswordSetting
     {

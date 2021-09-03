@@ -1,4 +1,4 @@
-using AuthJWT.WebAPI.Configurations;
+using Leo.Auth.Api.Configurations;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthJWT.WebAPI
+namespace Leo.Auth.Api
 {
     public class Startup
     {
@@ -39,7 +39,7 @@ namespace AuthJWT.WebAPI
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "AuthJWT.WebAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Leo.Auth.Api", Version = "v1" });
 
                 var securityScheme = new OpenApiSecurityScheme
                 {
@@ -99,7 +99,7 @@ namespace AuthJWT.WebAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AuthJWT.WebAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Leo.Auth.Api v1"));
             }
 
             app.UseHttpsRedirection();

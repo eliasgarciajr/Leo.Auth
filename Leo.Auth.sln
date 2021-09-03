@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthJWT.WebAPI", "AuthJWT.WebAPI\AuthJWT.WebAPI.csproj", "{A6C1B62C-C989-407D-B727-0969D61F7D04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leo.Auth.Api", "Leo.Auth.Api\Leo.Auth.Api.csproj", "{A6C1B62C-C989-407D-B727-0969D61F7D04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJWT.Tests", "AuthJWT.Tests\AuthJWT.Tests.csproj", "{05C8E5CD-1A15-493A-A7C5-2DFC51B5E3C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leo.Auth.Tests", "Leo.Auth.Tests\Leo.Auth.Tests.csproj", "{05C8E5CD-1A15-493A-A7C5-2DFC51B5E3C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leo.Auth.Models", "..\Leo.Auth\Leo.Auth.Models\Leo.Auth.Models.csproj", "{2E56494D-D38D-4EF0-93D1-AC27C2260571}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leo.Auth.Service", "..\Leo.Auth\Leo.Auth.Service\Leo.Auth.Service.csproj", "{63BBBFA2-20EC-448F-A7A2-282A20A9A003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leo.Auth.Data", "Data\Leo.Auth.Data.csproj", "{A1479777-208E-48DD-9569-600D84BA3F7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{05C8E5CD-1A15-493A-A7C5-2DFC51B5E3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C8E5CD-1A15-493A-A7C5-2DFC51B5E3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C8E5CD-1A15-493A-A7C5-2DFC51B5E3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E56494D-D38D-4EF0-93D1-AC27C2260571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E56494D-D38D-4EF0-93D1-AC27C2260571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E56494D-D38D-4EF0-93D1-AC27C2260571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E56494D-D38D-4EF0-93D1-AC27C2260571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BBBFA2-20EC-448F-A7A2-282A20A9A003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BBBFA2-20EC-448F-A7A2-282A20A9A003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BBBFA2-20EC-448F-A7A2-282A20A9A003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BBBFA2-20EC-448F-A7A2-282A20A9A003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1479777-208E-48DD-9569-600D84BA3F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1479777-208E-48DD-9569-600D84BA3F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1479777-208E-48DD-9569-600D84BA3F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1479777-208E-48DD-9569-600D84BA3F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

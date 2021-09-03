@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AuthJWT.WebAPI": {
+    "Leo.Auth.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
